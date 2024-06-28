@@ -1,7 +1,7 @@
 // キャッシュファイルの指定
 var CACHE_NAME = 'yasufuku-7510.github.io';
 var urlsToCache = [
-    '/yasufuku-7510.github.io/',
+    '/yasufuku-7510.github.io/'
 ];
 
 // インストール処理
@@ -21,7 +21,7 @@ self.addEventListener('fetch', function(event) {
         caches
             .match(event.request)
             .then(function(response) {
-                return response ? response : fetch(event.request);
+                return response || fetch(event.request);
             })
     );
 });
