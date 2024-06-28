@@ -1,6 +1,16 @@
 {
-  "name": "色の名は。",
+
+  "manifest_version": "3", // マニフェストのバージョン
+  "name": "My App", // アプリ名
+  "short_name": "App", // アプリ名の短縮名
+  "version": "0.1.0", // 拡張機能自体のバージョン
+  "description": "拡張機能の説明文",
   "icons": [
+    {
+      "src": "./img/color-name-icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
     {
       "src": "./img/color-name-icon-192x192.png",
       "sizes": "192x192",
@@ -13,8 +23,6 @@
     }
   ],
   "start_url": "./index.html",
-  "display": "standalone",
-  "background_color": "#FFFFFF",
-  "theme_color": "#4e342e"
+  "display": "standalone"
 }
 
